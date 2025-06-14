@@ -1,0 +1,10 @@
+# node modules
+node_modules/
+
+# лог файли
+*.log
+
+# тимчасові файли
+.DS_Store
+.env
+dist/
