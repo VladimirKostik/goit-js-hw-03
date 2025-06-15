@@ -1,4 +1,27 @@
 function filterArray(numbers, value) {
+    const index = [];
+    for (const number of numbers) {
+      if (number > value) {
+        index.push(number);
+      }
+    }
+return index;
+}
+
+//ще варіант
+
+/* 
+function filterArray(numbers, value) {
+return numbers.filter(number => number > value);
+} 
+*/
+
+
+
+// старий код
+
+/* 
+function filterArray(numbers, value) {
     const index = numbers.indexOf(value);
   if (index !== -1) {
     return numbers.slice(index + 1);
@@ -6,7 +29,7 @@ function filterArray(numbers, value) {
     return numbers.filter(number => number > value);
   }
 }
-
+*/
 
 
 
